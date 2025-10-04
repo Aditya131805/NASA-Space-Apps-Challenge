@@ -4,7 +4,7 @@
 This project predicts exoplanet and stellar properties using machine learning. It includes classification and regression models with evaluation metrics and visualizations. The backend handles data cleaning, feature engineering, model training, and evaluation.
 
 ## Folder Structure & Files
-- `main.ipynb` : Notebook containing full workflow of model training, evaluation, and visualizations.
+- `models.ipynb` : Notebook containing full workflow of model training, evaluation, and visualizations.
 - `clean_K2.ipynb`, `clean_KOI.ipynb`, `clean_TOI.ipynb` : Notebooks for cleaning raw datasets.
 - `K2_cleaned.csv`, `KOI_cleaned.csv`, `TOI_cleaned.csv` : Cleaned individual datasets.
 - `Combined Dataset.csv` : Final combined dataset used for training all models.
