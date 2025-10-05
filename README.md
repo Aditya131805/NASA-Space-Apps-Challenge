@@ -57,16 +57,26 @@ Datasets are from the NASA Exoplanet Archive:
   - Classification: Logistic Regression, Random Forest, KNN  
   - Regression: Linear Regression, Random Forest Regressor, KNN Regressor  
 - Visualizations include confusion matrices, accuracy/metric display, correlation heatmaps, and feature importance charts.
-
 ### 4. Streamlit UI
-- `streamlit_exoplanet_app.py` provides an interactive interface:
-  - Load default or uploaded dataset
-  - Select task: **Visualize** or **Predict**
-  - Train models with selected features, test size, and random seed
-  - Save & download trained models
-  - Predict new values using pre-trained models
-  - View metrics, feature importance, and sample predictions
-  - For regression, `disposition` is automatically excluded from features
+`streamlit_exoplanet_app.py` provides an interactive interface:
+
+- Load default `Combined Dataset.csv` or upload a CSV
+- Switch between Dark/Light Mode for the app
+- View dataset preview and numeric column info
+- Select task: **Visualize & Train** or **Predict**
+
+**For Visualize & Train:**
+- Select Regression or Classification
+- Pick target and features
+- Choose model (Linear/Random Forest/KNN for regression, Logistic/Random Forest/KNN for classification)
+- Adjust test size and random seed
+- Optionally run 5-fold cross-validation
+- Train the model and view metrics (R² / Accuracy) and plots (scatter/trendline for regression, confusion matrix for classification)
+
+**For Predict:**
+- Upload a saved trained model (`.pkl`)
+- Enter feature values in numeric inputs
+- Get predicted value displayed in a stylized card
 
 ---
 
